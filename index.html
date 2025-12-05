@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Stroh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="reveal fade-in">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="DJ Stroh Logo">
+        </div>
+        <h1 class="slide-up">DJ STROH</h1>
+        <p class="slide-up">Official Website</p>
+
+        <button class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#mixes">Mixes</a></li>
+                <li><a href="artist.html" target="_blank">Artist</a></li>
+                <li><a href="#contact" class="cta-btn">Book DJ Stroh</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- OVERLAY REMOVED -->
+
+    <div class="container">
+
+        <section id="hero" class="hero reveal">
+            <h2 class="slide-up">Las Vegas DJ • Open Format • Hip-Hop • EDM</h2>
+            <p class="fade-in">Welcome to the official website of DJ Stroh.</p>
+            <a href="#mixes" class="cta-btn">Check Out My Mixes</a>
+        </section>
+
+        <section id="about" class="section reveal">
+            <h2 class="slide-up">About Me</h2>
+            <p class="fade-in">DJ Stroh is a Las Vegas-based open-format DJ, mixing Hip-Hop, EDM, and more. Check back soon for mixes and upcoming gigs!</p>
+            <img src="images/placeholder.jpg" alt="DJ performing" class="fade-in">
+        </section>
+
+        <section id="gigs" class="section reveal">
+            <h2 class="slide-up">Upcoming Shows</h2>
+            <p class="fade-in">Catch DJ Stroh live at these Las Vegas venues!</p>
+
+            <div class="gigs-container">
+                <div class="gig-card fade-in">
+                    <h3>Omnia Nightclub</h3>
+                    <p>Friday, Dec 20, 2025 • 10 PM – 2 AM</p>
+                </div>
+
+                <div class="gig-card fade-in">
+                    <h3>Hakkasan</h3>
+                    <p>Saturday, Dec 28, 2025 • 11 PM – 3 AM</p>
+                </div>
+
+                <div class="gig-card fade-in">
+                    <h3>Marquee</h3>
+                    <p>New Year’s Eve Special • 9 PM – 3 AM</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="mixes" class="section reveal">
+            <h2 class="slide-up">Mixes</h2>
+            <p class="fade-in">Listen to my latest DJ sets and live mixes.</p>
+
+            <div class="mix-container">
+
+                <!-- FINAL FIXED MIX EMBED -->
+                <div class="mix-card">
+                    <img src="images/mixleftpic.jpg" alt="Mix Cover">
+                    <h3 class="slide-up">House Mix Vol.1</h3>
+
+                    <iframe 
+                        width="100%" 
+                        height="300" 
+                        scrolling="no" 
+                        frameborder="no" 
+                        allow="autoplay" 
+                        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/strohduh/house-mix-vol1&color=%23e2730c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+                    </iframe>
+                </div>
+
+                <div class="mix-card">
+                    <img src="images/mixrightpic.jpg" alt="Mix Cover">
+                    <h3 class="slide-up">R&B Mix Vol.1</h3>
+
+                    <iframe 
+                        width="100%" 
+                        height="166" 
+                        scrolling="no" 
+                        frameborder="no"
+                        allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/strohduh/rb-mix-2000s-2020s-vibey-brunchcar-ride-playlist-cmix&color=%23e2730c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false">
+                    </iframe>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="section reveal">
+            <h2 class="fade-in">Contact / Booking</h2>
+            <p class="fade-in">For shows, events, or inquiries — reach out below.</p>
+
+            <form class="contact-form" action="https://formsubmit.co/strohmusicofficial@gmail.com" method="POST">
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="New Booking Request — DJ Stroh Website">
+                <input type="text" name="_honey" style="display:none">
+
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+
+                <textarea name="message" placeholder="Your Message" required></textarea>
+
+                <button type="submit" class="cta-btn">Send Message</button>
+            </form>
+        </section>
+
+        <section id="socials" class="section reveal">
+            <h2 class="slide-up">Follow Me</h2>
+            <p class="fade-in">Stay connected for mixes, live streams, and events.</p>
+
+            <div class="social-icons fade-in">
+                <a href="https://www.instagram.com/strohduh" target="_blank">Instagram</a>
+                <a href="https://www.soundcloud.com/strohduh" target="_blank">SoundCloud</a>
+                <a href="https://www.youtube.com/@9hineent" target="_blank">YouTube</a>
+                <a href="https://www.tiktok.com/@strohduh" target="_blank">Tik Tok</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="fade-in">
+        <p>&copy; 2025 DJ Stroh. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
