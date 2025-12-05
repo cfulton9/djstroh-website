@@ -104,6 +104,8 @@ nav ul li a {
     font-weight: bold;
     align-items: center;
     transition: color 0.3s ease;
+    display: flex;
+    height: 100%;
 }
 
 nav ul li a:hover { color: #000; }
@@ -238,14 +240,43 @@ footer {
    RESPONSIVE DESIGN
 ============================== */
 @media (max-width: 600px) {
-    nav ul { flex-direction: column; gap: 15px; }
-    .menu-btn { display: flex; margin: 20px auto 0; }
-    nav { max-height: 0; background: #111; }
-    .hero { padding: 80px 20px; }
-    .hero h2 { font-size: 1.4rem; }
-    .section { padding: 70px 20px; }
-    .mix-container { grid-template-columns: 1fr; }
+
+    /* Stack the menu vertically AND center it */
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center; /* center items horizontally */
+        padding: 20px 0;     /* optional: looks cleaner */
+    }
+    /* Each <li> should center its link */
+    nav ul li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    /* Center the actual text inside the link */
+    nav ul li a {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0; /* tap-friendly spacing */
+    }
+    /* Show hamburger button */
+    .menu-btn {
+        display: flex;
+        margin: 20px auto 0;
+    }
+    /* Mobile nav collapsed state */
+    nav {
+        max-height: 0;
+        background: #111;
+    }
+    /* Open state (when JS adds .open) */
+    nav.open {
+        max-height: 300px;
+    }
 }
+
 
 @media (max-width: 768px) {
     header { padding: 10px 20px; }
